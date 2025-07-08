@@ -1,1 +1,11 @@
 print("Bot Telegram aktif!")
+import telebot
+
+TOKEN = 'ISI_TOKEN_BOT_KAMU_DI_SINI'
+bot = telebot.TeleBot(TOKEN)
+
+@bot.message_handler(commands=['start'])
+def send_welcome(message):
+    bot.reply_to(message, "Bot prediksi ganjil/genap aktif!")
+
+bot.polling()
