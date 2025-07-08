@@ -1,7 +1,7 @@
 print("Bot Telegram aktif!")
 import telebot
 
-TOKEN = 'ISI_TOKEN_BOT_KAMU_DI_SINI'
+TOKEN = 8062796614:AAFcP81f4dC-7ZpBNv13_Ry80DoypQQ9reg
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
